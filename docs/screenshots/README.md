@@ -2,16 +2,13 @@
 
 Image assets referenced by the root `README.md`.
 
-## `triage-approval.png` (pending)
+## `triage-approval.png`
 
-The hero screenshot for the governance positioning: the **"Needs you" triage
-view** with an agent paused on a **risk-typed approval card**, awaiting a human
-decision.
+Live capture of the Agents **Triage** view (not the kanban board): the
+**Needs you** approval queue at the top, with Running / Idle & done below.
+Taken from a real cockpit session against `~/.claude` session data.
 
-Capture requirements:
-
-- Use the **triage view** (Agents tab, default mode) — **not** the kanban board.
-- Frame should show at least one card with a real risk badge
-  (`DESTRUCTIVE` / `CODE_EXECUTION` / `REQUIRES_REVIEW`) and the inline
-  approve/steer actions.
-- Once added, uncomment the `![...]` image line in the root `README.md`.
+When a gate is pending, cards in Needs you carry a real risk badge
+(`DESTRUCTIVE` / `CODE_EXECUTION` / `REQUIRES_REVIEW`) and inline
+approve/steer — never fabricated. This frame was captured with Needs you
+empty (all-clear); the queue surface is still the governance front door.

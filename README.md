@@ -1,10 +1,10 @@
 # Mission Control
 
-**The only open-source approval layer for agentic AI work.** Mission Control is a
-governance cockpit for teams running Claude Code agents: the actions that matter
-route through a **risk-typed approval gate**, and every decision lands in an
-**append-only audit trail** — who approved what, when, and under which controls.
-It keeps a human in the loop without slowing the machines down.
+**An open-source governance cockpit for agentic AI work.** Mission Control sits
+with the agents you're already running: the actions that matter route through a
+**risk-typed approval gate**, and every decision lands in an **append-only audit
+trail** — who approved what, when, and under which controls. It keeps a human in
+the loop without slowing the machines down.
 
 - **What it is** — a live, multi-project oversight window over the Claude Code
   agents you're already running, with approval gates at the danger-zone boundary
@@ -13,16 +13,12 @@ It keeps a human in the loop without slowing the machines down.
   once who need to _see, steer, and answer for_ what those agents do — not just
   watch a dashboard.
 - **Why it's different** — first-party tools (Claude.ai, Cursor, Windsurf) optimize
-  for solo-developer velocity; none lead with audit trails, approval gates, or
-  multi-agent oversight. Mission Control owns that unoccupied position — the
-  team-lead cockpit — and stays local-first: no cloud, no account, no relay.
+  for solo-developer velocity. Mission Control leads with the team-lead cockpit:
+  audit trails, approval gates, and multi-agent oversight — local-first, no cloud,
+  no account, no relay.
 
-<!-- screenshot: triage view with approval card -->
-<!-- Drop the asset at docs/screenshots/triage-approval.png and uncomment the line below.
-     It must show the "Needs you" triage view with a risk-typed approval card — NOT the kanban board. -->
-<!-- ![Mission Control's triage view — an agent paused on a risk-typed approval card, awaiting a human decision](docs/screenshots/triage-approval.png) -->
 
-> 📸 _Screenshot placeholder — the "Needs you" triage queue with an agent paused on a risk-typed approval card. (Asset lands at `docs/screenshots/triage-approval.png`.)_
+![Mission Control's triage view — the Needs you approval queue over live Claude Code sessions](docs/screenshots/triage-approval.png)
 
 ## Governance: approval gates + audit trail
 

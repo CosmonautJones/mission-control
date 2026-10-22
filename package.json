@@ -1,6 +1,6 @@
 {
   "name": "@mission-control/app",
-  "version": "0.5.0",
+  "version": "0.7.0",
   "description": "Mission Control — a live cockpit for Claude Code agents. Run `npx @mission-control/app` to go from zero to a running cockpit.",
   "bin": "bin/start.mjs",
   "engines": {

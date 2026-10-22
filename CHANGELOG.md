@@ -10,6 +10,69 @@ the **package semver** axis; `0.4.0` is the first tagged version off `0.1.0`.
 
 <!-- New entries land here. ONLY S7 (E-release-eng) flips the heading below. -->
 
+## [0.7.0] - 2026-10-21
+
+Everything on `main` since the `v0.6.0` tag. PR numbers prefixed `tjones-gss#`
+were merged in the original `tjones-gss/mission-control` repository.
+
+**Added**
+
+- Semantic alerting: loop detection and a cost runway (Sprint 2-a,
+  [tjones-gss#22](https://github.com/tjones-gss/mission-control/pull/22)).
+- LAN team-lead mode: mDNS discovery and multi-seat approval identity
+  (Sprint 2-b, [tjones-gss#23](https://github.com/tjones-gss/mission-control/pull/23), [tjones-gss#25](https://github.com/tjones-gss/mission-control/pull/25)).
+- Env-gated OpenTelemetry trace export for fleet runs and approval events
+  (Sprint 2-c, [tjones-gss#26](https://github.com/tjones-gss/mission-control/pull/26)).
+- A cross-vendor harness contract test (Sprint 2-d, [tjones-gss#27](https://github.com/tjones-gss/mission-control/pull/27)).
+- A read-only Pipeline live view that renders the real rails instead of the
+  mock, a native folder picker, an indexed anomaly sweep with safe boot
+  defaults, and a Fleet dashboard ([tjones-gss#29](https://github.com/tjones-gss/mission-control/pull/29)).
+- An MIT license ([#1](https://github.com/CosmonautJones/mission-control/pull/1)).
+
+**Changed**
+
+- Console look and feel: a calm default theme, the anomaly lifecycle, keyboard
+  triage, motion, eyebrows, glass and deferred search ([tjones-gss#29](https://github.com/tjones-gss/mission-control/pull/29)).
+- README: dropped the exclusivity claim and added a real triage screenshot
+  ([#2](https://github.com/CosmonautJones/mission-control/pull/2)).
+- Docs: the UX roadmap, think-tank planning notes and loop-architecture skills.
+
+**Fixed**
+
+- The TriageView approve/reply path and the QuickActions/SelectCheckbox
+  controls now work with a keyboard and screen reader ([tjones-gss#28](https://github.com/tjones-gss/mission-control/pull/28)).
+- E2E assertions match the token-layer active tab and the new History empty
+  copy, and the picker test uses a platform-aware cancel code ([tjones-gss#29](https://github.com/tjones-gss/mission-control/pull/29)).
+
+## [0.6.0] - 2026-06-28
+
+Recorded after the fact. The `v0.6.0` tag was cut on 2026-06-28 without moving
+the version fields or this changelog, so `main` kept saying `0.5.0` until 0.7.0.
+
+**Added**
+
+- `npx @mission-control/app` launcher that goes from zero to running
+  ([tjones-gss#20](https://github.com/tjones-gss/mission-control/pull/20)).
+- A local auth token for the API and SSE endpoints ([tjones-gss#18](https://github.com/tjones-gss/mission-control/pull/18)).
+- Server startup port guard, a health gate, version/uptime reporting and DB
+  close on shutdown ([tjones-gss#17](https://github.com/tjones-gss/mission-control/pull/17)).
+- Health exposes active parser degradation as `schema_warnings` ([tjones-gss#21](https://github.com/tjones-gss/mission-control/pull/21)).
+- A multi-select SelectionBar for broadcasting to many sessions, and smart
+  context-aware reply suggestions in the Needs-you queue.
+- A mobile-responsive three-pane layout, sharper Command Palette search, a
+  polished Fleet launch flow, and a visual-consistency pass (focus rings,
+  shared state primitives).
+
+**Changed**
+
+- The README now leads with governance instead of Fleet ([tjones-gss#19](https://github.com/tjones-gss/mission-control/pull/19)).
+- Retired the DispatchDrawer (its action moved into the SelectionBar), removed
+  MeshTab, and split FleetTab and ConversationView into smaller components.
+
+**Fixed**
+
+- Hardened session-spawn input validation and added a LAN-exposure advisory.
+
 ## [0.5.0] - 2026-06-26
 
 ### The Epicenter — ADR-0008 SQLite cache + search everything + palette + AFK notify + analytics + knowledge
